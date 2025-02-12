@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f907157839.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="Header"> 
+        <div class = "container">
+            <nav>
+                <h1 class="logo"><span>R</span>akesh <span>K</span>umar.</h1> 
+                    <ul id = "sidemenu">
+                        <li> <a href="#home">Home</a></li>
+                        <li> <a href="#About-me">About</a></li>
+                        <li><a href="#services">My Services</a></li>
+                        <li> <a href="#Portfolio">Portfolio</a></li>
+                        <li> <a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+                    </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class=" header-text">
+                <p> Web Developer</p>
+                <h1>Hi, I'm <span>Rakesh Kumar</span></h1>
+                <h2>from Andhra Pradesh</h2>
+            </div>
+        </div>
+    </div>
+<!---------About Section------------>
+    <div id="About-me">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profilepic2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a B.Tech graduate in Computer Science and Engineering with specialized training in Full Stack Development using Java. Skilled in both front-end and back-end frameworks and technologies, I have hands-on experience working with databases and building dynamic, scalable applications. With a strong foundation in coding and problem-solving, I am actively seeking a fresher role in software development within a reputed organization. My goal is to contribute effectively to innovative projects while continuously enhancing my technical expertise and growing as a professional in the tech industry.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick = "opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick = "opentab('education')">Education</p>
+                        <p class="tab-links" onclick = "opentab('projects')">Projects</p>
+                    </div>
+                    <div class="tab-contents active-tab" id = "skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web Application interface -<br> Wireframes and Prototyping </li> <br>
+                            <li><span>Front-end Frameworks</span><br>Angular JS, React Js</li><br>
+                            <li><span>back-end Technolgies</span><br>JDBC, Servlets, JSP</li><br>
+                            <li><span>back-end Frameworks</span><br>Spring Framework, Hibernate</li><br>
+                        </ul>
+                        </ul>
+                    </div>  
+                    <div class = "tab-contents" id = "education">
+                        <ul> 
+                            <li><span>2019 - 2023</span> <br> B. Tech - Computer Science and Enginnering (CSE)<br> CGPA - 8.06 <br> Aditya Institute of Technolgy and Management - Tekkali <br>Srikakulam, AP</li>
+                            <li><span>2017 - 2019</span> <br> Intermediate - PCM<br> CGPA - 8.86 <br> Narayana Junior College - Palasa <br>Srikakulam, AP</li>
+                            <li><span>2017</span> <br> 10th Grade<br> CGPA - 9.8 <br>Ravindra Bharathi School - Palasa <br> Srikakulam, AP</li>
+                        </ul> 
+                    </div> 
+                    <div class = "tab-contents" id = "projects">
+                        <ul> 
+                            <li><span>Personal Portfolio website </span></li>
+                            <li><span>2017 - 2019</span> </li>
+                            <li><span>2017</span> </li>
+                        </ul> 
+                    </div>              
+            </div>
+        </div>
+    </div>
+<!----------Services Section ------------->
+    <div id = "services">
+        <div class="container">
+            <h1 class = "sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Front-end Developer</h2>
+                    <p> this is the praragraph for fron end developer block of services section</p>
+                    <a href="#"> Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Back-end Developer</h2>
+                    <p> this is the praragraph for backend developer block of services section</p>
+                    <a href="#"> Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-display"></i>
+                    <h2>web desgin</h2>
+                    <p> this is the praragraph for webdesgin block of services section</p>
+                    <a href="#"> Learn more</a>
+                </div>
+
+
+
+            </div>
+        </div>
+     </div>
+<!---------portfolio section/ projects explanation section-------->
+<div id = "Portfolio">
+    <div class = "container">
+        <h1 class = "sub-title">My Work</h1>
+    <div class = "work-list">
+        <div class = "work">
+            <img src="images/profilepic2.jpg"> <!------ ADD image of project-1 work ----->
+            <div class = "layer">
+                <h3>Project-1</h3>
+                <p>this paragraph contains the description or abstract of the project - 1</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class = "work">
+            <img src = "images/profilepic2.jpg"> <!------ADD image of project-2 work ----->
+            <div class = "layer">
+                <h3>Project-1</h3> <!----ADD Project 2 Name-->
+                <p>this paragraph contains the description or abstract of the project - 1</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class = "work">
+            <img src="images/profilepic2.jpg"> <!------ADD image of project-3 work ----->
+            <div class = "layer">
+                <h3>Project-1</h3> <!----ADD project 3 Name-->
+                <p>this paragraph contains the description or abstract of the project - 1</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class = "btn">Know more</a><!------add more details about projects and my works------>
+</div>
+<!----------------------------Contact Form Section --------------------------------->
+<div id = "contact">
+    <div class = "container">
+        <div class = "row">
+            <div class = "contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><a href="mailto:rakeshkumarvammaravalli002@gmail.com"><i class="fa-solid fa-paper-plane"></i></a> rakeshkumarvammaravalli002@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>  +91 8317603573</p>
+                <div class = "social-icons">
+                    <a href="https://www.linkedin.com/in/rakesh-386870253/"><i class="fa-brands fa-linkedin"></i></a> <!----add linked in page url-->
+                    <a href="https://github.com/raakesh2002"><i class="fa-brands fa-square-github"></i></a> <!---add github page url -->
+                    <a href="https://www.instagram.com/tech_learnerrakesh/"><i class="fa-brands fa-instagram"></i></a> <!---add instagram page url-->
+                    <a href="https://www.facebook.com/profile.php?id=100067402820249"><i class="fa-brands fa-square-facebook"></i></a> <!----add facebook page url-->
+                    <a href="https://wa.me/+918317603573"><i class="fa-brands fa-square-whatsapp"></i></a> <!----add whatsaaap url-->
+                </div>
+                <a href="images/CV_2024100911480795.pdf" download class ="btn btn2">Download CV</a> <!-------chnage resume -->
+            </div>
+            <div class = "contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name = "Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Mail" required>
+                    <textarea name="Message" id="" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class = "btn btn2">Submit</button>
+                </form>
+                <span id = "msg" ></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class = "copyright">
+    <p>copyright © RakeshKumar. Made with <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-js"></i> </p>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<!-------script for mobile view port menu bar icon-->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzegmZ5yUvM3V8nqHrsKtICUEtCXx1OiA-Vixcm3yqDh-sUwpIld6c7JoPTENZmxY23cA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => { msg.innerHTML = "Message sent successfully"
+                            setTimeout(function(){
+                                msg.innerHTML = ""
+                            }, 5000)
+                            form.reset()
+         })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
